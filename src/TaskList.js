@@ -5,7 +5,7 @@ export default class TaskList extends React.Component{
     render(){
         const { tasks, onDelete, onEdit }=this.props;
         return(
-            <ul className="list-group my-5">
+            <ul className="list-group my-5 bg-dark text-white p-4">
                 <h3 className="text-center">Task List</h3>
                 {
                     tasks.map((task)=>{

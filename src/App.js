@@ -73,12 +73,12 @@ class App extends React.Component{
 
   render(){
     return (
-      <div className="App container-fluid">
+      <div className="container-fluid">
           <div id="main-container" className="container">
             <h1 style={{textAlign:'center',margin:'20px 0px'}}>Task Manager</h1>
-            <form className="form-group" onSubmit={this.handleAdd}>
-                <input type="text" className="form-control" placeholder="Enter the task here..." value={this.state.task} onChange={this.handleTask}/>
-                <input type="date" className="form-control" placeholder="dd/mm/yyyy" value={this.state.date} onChange={this.handleDate}/>
+            <form className="form-group bg-secondary p-5" onSubmit={this.handleAdd}>
+                <input type="text" className="form-control my-3" placeholder="Enter the task here..." value={this.state.task} onChange={this.handleTask}/>
+                <input type="date" className="form-control my-3" placeholder="dd/mm/yyyy" value={this.state.date} onChange={this.handleDate}/>
                 {
                   this.state.editTask
                   ?

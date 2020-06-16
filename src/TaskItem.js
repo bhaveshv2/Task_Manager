@@ -6,7 +6,7 @@ const TaskItem = (props)=>{
     const {title,date,onDelete,onEdit} =props;
     return (
         <div className="task-item">
-            <li className="list-group-item d-flex justify-content-between my-2">
+            <li className="list-group-item d-flex justify-content-between my-2 bg-transparent border border-white">
                 <h6>{title}</h6>
                 <h6>Deadline :{date}</h6>
                 <div className="task-icons">
